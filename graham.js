@@ -127,6 +127,7 @@ function Orientation(p1,p2,p3){
   if(orientation>0) return 1; //anti clock
   else if(orientation<0) return -1; //clock
   else return 0; //collinear
+  //sup Krupa <3
 }
 function init(onHull,next){
   drawBluePoint(onHull);
