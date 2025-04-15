@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graham Scan Visualization</title>
+  <style>
+    p{
+      margin-bottom: 2px;
+    }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    #controls {
+      margin-bottom: 15px;
+    }
+    #userInput {
+      width: 400px;
+      padding: 5px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    select{
+      padding: 6px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: white;">GRAHAM SCAN</h1>
+  <div id="controls">
+    <input type="text" id="userInput" placeholder="Inputs like (1,2) (2, 3)" />
+    <br>
+    <p style="color: white;">Sample input (1,-9)(2,-3)(-4,5),(22,8)</p>
+    <br>
+    <button onclick="getInput()">Run</button>
+    <button onclick="reloadPage()">Reset</button>
+    <button onclick="randomiseInput()">Randomise Input</button>
+    <select id="selectedInput">
+      <option id="s3"> 
+        3
+      </option>
+      <option id="s4">
+        4
+      </option>
+      <option id="s5">
+        5
+      </option>
+      <option id="s6">
+        6
+      </option>
+      <option id="s7" selected>
+        7
+      </option>
+      <option id="s8">
+        8
+      </option>
+      <option id="s9">
+        9
+      </option>
+    </select>
+  </div>
+  <canvas id="canvas" width="700" height="500"></canvas>
+  <canvas id="stackCanvas" width="300" height="500" style="background-color: black;"></canvas>
+  <script src="graham.js"></script>
+</body>
+</html>
