@@ -189,7 +189,7 @@ function pushToStack(p){
   
 }
 function popFromStack() {
-  stackCtx.clearRect(83-10,stackYVal-Math.floor(stackStepVal/2)-10,70,30);
+  stackCtx.clearRect(83-13,stackYVal-Math.floor(stackStepVal/2)-10,70,30);
   stackYVal+=stackStepVal;
   console.log(stackYVal);
 }
